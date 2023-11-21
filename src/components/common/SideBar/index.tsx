@@ -70,12 +70,12 @@ const sidebars = [
     route: ROUTES.EVENT_MANAGEMENT,
     routePattern: [ROUTES.EVENT_MANAGEMENT, ROUTES.EVENT_MANAGEMENT_CREATE],
   },
-  {
-    label: 'Top Event set up',
-    icon: <CardSend size="16" />,
-    route: ROUTES.TOP_EVENT_SET_UP,
-    routePattern: [ROUTES.TOP_EVENT_SET_UP],
-  },
+  // {
+  //   label: 'Top Event set up',
+  //   icon: <CardSend size="16" />,
+  //   route: ROUTES.TOP_EVENT_SET_UP,
+  //   routePattern: [ROUTES.TOP_EVENT_SET_UP],
+  // },
   {
     label: 'Register Sell Management',
     icon: <Celsius size="16" />,
@@ -111,31 +111,31 @@ const sidebars = [
     route: ROUTES.ORDER_MANAGEMENT,
     routePattern: [ROUTES.ORDER_MANAGEMENT, ROUTES.ORDER_MANAGEMENT_DETAIL],
   },
-  {
-    label: 'Q&A',
-    icon: <LampCharge size="16" />,
-    route: ROUTES.FAQ_MANAGEMENT,
-    routePattern: [ROUTES.FAQ_MANAGEMENT, ROUTES.FAQ_MANAGEMENT_DETAIL],
-  },
-  {
-    label: 'Banner Management',
-    icon: <GalleryEdit size="16" />,
-    route: ROUTES.BANNER_MANAGEMENT,
-    routePattern: [
-      ROUTES.BANNER_MANAGEMENT,
-      ROUTES.BANNER_MANAGEMENT_CREATE,
-      ROUTES.BANNER_MANAGEMENT_DETAIL,
-    ],
-  },
-  {
-    label: 'Navigation set up',
-    icon: <DirectUp size="16" />,
-    route: ROUTES.NAVIGATION_SET_UP_LIST,
-    routePattern: [
-      ROUTES.NAVIGATION_SET_UP_LIST,
-      ROUTES.NAVIGATION_SET_UP_DETAIL_PATTERN,
-    ],
-  },
+  // {
+  //   label: 'Q&A',
+  //   icon: <LampCharge size="16" />,
+  //   route: ROUTES.FAQ_MANAGEMENT,
+  //   routePattern: [ROUTES.FAQ_MANAGEMENT, ROUTES.FAQ_MANAGEMENT_DETAIL],
+  // },
+  // {
+  //   label: 'Banner Management',
+  //   icon: <GalleryEdit size="16" />,
+  //   route: ROUTES.BANNER_MANAGEMENT,
+  //   routePattern: [
+  //     ROUTES.BANNER_MANAGEMENT,
+  //     ROUTES.BANNER_MANAGEMENT_CREATE,
+  //     ROUTES.BANNER_MANAGEMENT_DETAIL,
+  //   ],
+  // },
+  // {
+  //   label: 'Navigation set up',
+  //   icon: <DirectUp size="16" />,
+  //   route: ROUTES.NAVIGATION_SET_UP_LIST,
+  //   routePattern: [
+  //     ROUTES.NAVIGATION_SET_UP_LIST,
+  //     ROUTES.NAVIGATION_SET_UP_DETAIL_PATTERN,
+  //   ],
+  // },
   {
     label: 'Shipping fee set up',
     icon: <Car size="16" />,
@@ -148,16 +148,16 @@ const sidebars = [
     route: ROUTES.CLEARANCE_FEE_SETUP,
     routePattern: [ROUTES.CLEARANCE_FEE_SETUP],
   },
-  {
-    label: '1:1 Inquiry',
-    icon: <Graph size="16" />,
-    route: ROUTES.INQUIRY_MANAGEMENT,
-    routePattern: [
-      ROUTES.INQUIRY_MANAGEMENT,
-      ROUTES.INQUIRY_MANAGEMENT_REPLY,
-      ROUTES.INQUIRY_MANAGEMENT_VIEW,
-    ],
-  },
+  // {
+  //   label: '1:1 Inquiry',
+  //   icon: <Graph size="16" />,
+  //   route: ROUTES.INQUIRY_MANAGEMENT,
+  //   routePattern: [
+  //     ROUTES.INQUIRY_MANAGEMENT,
+  //     ROUTES.INQUIRY_MANAGEMENT_REPLY,
+  //     ROUTES.INQUIRY_MANAGEMENT_VIEW,
+  //   ],
+  // },
   {
     label: 'Report management',
     icon: <Chart size="16" />,
