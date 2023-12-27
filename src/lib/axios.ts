@@ -11,7 +11,7 @@ import axios, {
 
 const axiosInstance = () => {
   const Axios: AxiosInstance = axios.create({
-    baseURL: CONFIG.API_URL,
+    baseURL: `${CONFIG.API_URL}/api/v1`,
     headers: {
       'Content-Type': 'application/json',
     },

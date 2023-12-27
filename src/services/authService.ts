@@ -21,6 +21,9 @@ const authService = {
       }>
     >(ROUTE_API.LOGIN, model);
   },
+  checkHealth: async () => {
+    return axiosInstance().get(ROUTE_API.CHECK_HEALTH);
+  },
   forgotPassword: async (model: ForgotPasswordType) => {
     return axiosInstance().post(ROUTE_API.FORGOT_PASSWORD, model);
   },

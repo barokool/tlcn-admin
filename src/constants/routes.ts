@@ -45,6 +45,7 @@ export const ROUTES = {
 };
 
 export const ROUTE_API = {
+  CHECK_HEALTH: '/',
   LOGIN: '/auth/sign-in',
   FORGOT_PASSWORD: '/auth/forgot-password',
   RESET_PASSWORD: '/auth/reset-password',

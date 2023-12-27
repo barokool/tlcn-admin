@@ -2,7 +2,7 @@ import logo from '@assets/images/logo.png';
 import Checkbox from '@components/common/Checkbox';
 import FlashMessage from '@components/common/FlashMessage';
 import Input from '@components/common/Input';
-import { ROLE } from '@constants/codeConstants';
+import { CONFIG, ROLE } from '@constants/codeConstants';
 import { ROUTES } from '@constants/routes';
 import { useAppDispatch } from '@hooks/useAppDispatch';
 import useParam from '@hooks/useParam';
@@ -11,11 +11,13 @@ import authService from '@services/authService';
 import { PrimaryButton } from '@style/DefaultStyled';
 import { Form, message } from 'antd';
 import { FormLogin, ResponseModel } from 'interface';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from 'styled-components';
 import * as S from './style';
+import { axiosInstance } from '@lib/axios';
+import axios from 'axios';
 
 const Login = () => {
   const { t } = useTranslation();
@@ -63,6 +65,22 @@ const Login = () => {
 
     setLoading(false);
   };
+
+  const Sbla = async () => {
+    try {
+      // const response = await axios.get('http://localhost:8081/api/v1');
+      const response = await authService.checkHealth();
+
+      console.log(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    Sbla();
+    // console.log(CONFIG.API_URL);
+  }, []);
 
   return (
     <S.Container>
